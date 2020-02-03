@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+
+		*{
+			box-sizing: border-box;
+		}
+		div.section
+		{
+			width: 100%;
+
+		}
+
+		div.top1{
+				 background-color: lightgreen;
+				  padding: 15px;
+
+		}
+
+		div.left1{
+			background-color: grey;
+			width: 30%;
+			float: left; 
+			height: 300px;
+			padding-left: 10px;
+			border: 1px solid black;
+		}
+
+		div.left1 ul {
+			list-style-type: none;
+			padding: 0px;
+
+
+		}
+
+		div.left1 ul li
+		{
+			color: brown;
+		}
+
+		div.right1{
+			background-color: lightgrey;
+			 width: 70%;
+			 float: right;
+			 height: 300px;
+			 padding-left: 10px; 
+		}
+
+		div.bottom1
+		{
+			background-color: lightgreen; 
+			text-align: center;
+		}
+
+
+
+
+
+		section{
+			width: 100%;
+		}
+
+		header{
+			background-color: lightgreen;
+			padding: 15px;
+
+		}
+
+		nav{
+			background-color: grey;
+			width: 30%;
+			float: left; 
+			height: 300px;
+			padding-left: 10px;
+			border: 1px solid black;
+
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0px;
+
+
+		}
+
+		nav ul li
+		{
+			color: brown;
+			display: block;
+			background-color: grey;
+
+
+		}
+
+
+		nav ul li a{
+			text-decoration: none;
+			color: brown; 
+			display: block;
+			
+		}
+
+		nav ul li a:hover{
+			background-color: #555;
+			color: white;
+		}
+
+		article{
+			background-color: lightgrey;
+			 width: 70%;
+			 float: right;
+			 height: 300px;
+			 padding-left: 10px; 
+		}
+
+
+		footer
+		{
+			background-color: lightgreen; 
+			text-align: center;
+		}
+
+		@media(max-width: 720px) {
+			nav, article
+			{
+				width: 100%;
+				height: auto;
+			}
+			
+		}
+
+		p.ver1{
+			color: red;
+		}
+
+		p.ver2{
+			font-size: 30px;
+			background-color: grey;
+			color:yellow;
+		}
+		p#id1
+		{
+			text-align: center;
+			color: blue;
+		}
+		p#id2
+		{
+			font-weight: bold;
+		}
+        
+
+	</style>
+</head>
+<body>
+
+
+    <form action="/action_page.php" method="get">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        <input type="submit" value="Submit">
+      </form>
+
+
+	<p>Normal style text</p>
+	<p class="ver1"> text with class ver1</p>
+	<p class="ver2"> text with class ver2</p>
+	<p id="id1"> text with id1</p>
+	<p id="id2"> text with id2</p>
+
+
+	<p id="hide">some text</p>
+	
+	<button type="button"
+	onclick="document.getElementById('hide').style.display='none'">
+		Click me
+	</button>
+
+
+	<p><a href="#Final">GO TO THE FINAL PART </a></p>
+
+	<h2>Attendance</h2>
+	<p>Attendance: should be regular. The student won’t obtain additional points for course attendance, but the attendance is important to pass the course.... </p>
+	<h2>Class work:</h2>
+	<p>Class work: The duration of lectures and practical lessons is 50 minutes. Students are expected to complete all readings and assignments, attend class ...p>
+	<h2 id='Final'>Final project:</h2>
+	<p>Final project: An INDIVIDUAL PROJECT (report) and PRESENTATION (slides) -- At the completion of this course each student has to submit an online project...</p>
+
+
+
+	<p class="ver1 ver2">text with classes</p>
+	<p class="ver2 ver1">text classes</p>
+	<p id="id1 id2">text with ids</p>	
+	<p id="id1" class="ver1">text with class and id</p>
+	<p class="ver1" id="id1">moidified text</p>
+
+
+
+
+
+
+		
+	</ul>
+
+	<section>
+
+		<header>
+			<h2>Web page main title</h2>
+		</header>
+
+		<nav>
+			<p>Main menu</p>
+			<ul>
+				<li><a href="#">HTML</a></li>
+				<li><a href="#"> PHP</a></li>
+				<li><a href="#">PERL</a></li>
+			</ul>
+			
+		</nav>
+
+		<article>
+					<h2>Technical Tutorials</h2>
+					<p>This is our first article.</p>
+		</article>
+
+
+		<footer>
+			<p>Copyright &copy 2020.</p>
+		</footer>
+
+		
+	</section>
+
+</body>
+</html>
