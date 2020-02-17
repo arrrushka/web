@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+            body{
+                padding: 15px 0px;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: white;
+                height: auto;
+            }
+
+            .konteiner{
+				width:100%;
+				height:auto;
+				text-align: center;
+			}
+			header{
+				width:100%;
+                background-color: linen;
+				height:50px;
+				text-align: center;
+			}
+
+           .s{
+				width:100%;
+                height:  auto;;
+			}
+
+			.f{
+				width:auto;
+                height: auto;
+				background-color: rgb(211, 211, 211);
+			}
+             
+
+            .m{
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            }
+
+            .menulist{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            flex-flow: row;
+            }
+
+            .menulist li {display: inline-block;}
+.menulist li:after {
+  display: inline-block;
+  vertical-align:top;
+}
+
+            .menulist a{
+            text-decoration: none;
+            display: block;
+            color:white;
+            padding: 5px;
+            letter-spacing: 1px;
+            }
+
+            .menulist a:hover{background-color: rgba(48, 45, 45, 0.712);}
+
+			footer{
+				clear:both;
+				height: 25px;
+				width: 100%;
+				text-align: center;
+				background-color:lightcoral;
+			}
+
+        @media(max-width: 1000px){
+           .cont{
+               flex-flow: column;
+               width: 100%;
+           }
+           .cont>div{
+               width: 100%;
+               margin: 3px 0px 0px 0px;
+           }
+           .m{
+               flex-flow: column;
+               width: 100%;
+           }
+           .m>div{
+               width: 100%;
+           }
+           .konteiner{
+               height: auto;
+           }
+           
+       }
+			
+
+		</style>
+    </head>
+    
+	<body>
+        <div class="konteiner">
+            <header float="left">
+               In your HEAD
+                
+            </header>
+            <div class="m">
+                <div class="f">
+                    <div class="menu">
+                        <ul class="menulist" flex-flow="column">
+                            <li><a href="">Personality</a></li>
+                            <li><a href="">Poems</a></li>
+                            <li><a href="">History</a></li>
+                            <li><a href="">Visual</a></li>
+                            <li><a href="">Entertainment</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s" style="color: black;">In ur HEEAAD</div>
+            </div>
+            <footer>Zombie! <span style="color: black;">Zombie! </span>Zombie-e-e </footer>
+        </div>
+    </body>
+</html>
