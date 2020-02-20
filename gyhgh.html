@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+            body{
+                padding: 15px 0px;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: white;
+                height: auto;
+                background: url(https://avatars.mds.yandex.net/get-pdb/245485/c90760dc-111e-4cb6-978c-e7d9a5db8606/s1200);
+                background-size: 215px;
+            }
+
+            .konteiner{
+				width:100%;
+				height:auto;
+				text-align: center;
+			}
+            
+			.sample-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url(https://lh3.googleusercontent.com/proxy/xJWbxVx2w3WFLvxniFsE-Zk55BS9ig7l4RhvvT5s4PPsVX36QSUdOO4EudVpFlJSljYdOqLXesvsIyfO3SkJFB8Zr6Gj8DDAZE_IsnRA2t0dUx_0sOP-iMq4ohti_3bRlSuPB9-qgmczGNZZ1Q_uom7hucFSGrZtKKpVOahzXeVhXGY);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sample-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: MidnightBlue;
+  opacity: 0.3;
+}
+.sample-header-section {
+  position: relative;
+  padding: 15% 0 10%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-weight: 500;
+}
+h2 {
+  font-weight: 400;
+}
+.sample-section-wrap {
+  position: relative;
+  background-color: white;
+}
+.sample-section {
+  position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+           .s{
+				width:100%;
+                height:  auto;;
+			}
+             
+
+            .m{
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            }
+
+            
+            
+            #cssmenu {
+            background: rgba(109, 133, 121, 0.897);
+            width: auto;
+            }
+
+            #cssmenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: block;
+            }
+
+            #cssmenu ul li {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            }
+
+            #cssmenu ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            padding: 15px 25px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            position: relative;
+            }
+            
+            #cssmenu ul li a:hover {
+            color: #333333;
+            }
+
+            #cssmenu ul li a:hover:before {
+            width: 100%;
+            }
+
+            #cssmenu ul li a:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0;
+            background: #333333;
+            transition: width .25s;
+            }
+
+            #cssmenu ul li.active a {
+            color: #333333;
+            }
+
+            #cssmenu ul li.active a:before {
+            width: 100%;
+            }
+
+			footer{
+				clear:both;
+				height: 25px;
+				width: 100%;
+				text-align: center;
+				background-color:lightcoral;
+			}
+
+            @media{
+           .cont{
+               flex-flow: column;
+               width: 100%;
+           }
+           .cont>div{
+               width: 100%;
+               margin: 3px 0px 0px 0px;
+           }
+           .m{
+               flex-flow: column;
+               width: 100%;
+           }
+           .m>div{
+               width: 100%;
+           }
+           .konteiner{
+               height: auto;
+           }
+
+           #cssmenu {
+            flex-flow:column ;
+            display: block;
+            margin: 0;
+            padding: 0;
+            }
+
+    
+           
+       }
+			
+
+		</style>
+    </head>
+    
+	<body>
+        <div class="konteiner">
+
+            <div class="sample-header">
+                <div class="sample-header-section">
+                  <h1>Scroll down to see the parallax effect</h1>
+                  <h2>Background landcape scrolls with its own depth </h2>
+                </div>
+              </div>
+
+            <div class="m">
+                <div id='cssmenu'>
+                    <ul>
+                       <li class='active'><a href='#'><span>Home</span></a></li>
+                       <li><a href='#'><span>Products</span></a></li>
+                       <li><a href='#'><span>Company</span></a></li>
+                       <li class='last'><a href='#'><span>Contact</span></a></li>
+                    </ul>
+                    </div>
+                <div class="s" style="color: black;">In ur HEEAAD</div>
+            </div>
+            <footer>Zombie! <span style="color: black;">Zombie! </span>Zombie-e-e </footer>
+        </div>
+    </body>
+</html>
