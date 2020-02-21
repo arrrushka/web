@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		.main{
+			border: 10px solid #ffcc99;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		.Lisa{
+			border: 8px solid rgb(103, 155, 197);
+			margin: 50px;
+			color: rgb(103, 155, 197);
+			display: flex;
+			flex-flow: row wrap;
+		}
+		.David{
+			border: 8px solid rgb(103, 155, 197);
+			margin: 50px;
+			color: rgb(103, 155, 197);
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+		}
+		img.I{
+			width: 100px;
+			height: 100px;
+		}
+
+        @media(max-width: 1000px){
+           .Lisa, .David{
+               flex-flow: row;
+               width: auto;
+               margin: 5px;
+           }
+           .main{
+               flex-flow: column;
+               font-size: auto;
+               width: auto;
+           }
+           img.I{
+               width: 50px;
+               height: 50px;
+           }
+           
+       }
+	</style>
+</head>
+<body>
+	<section class="main">
+		<div class="Lisa">
+			<img class="I" src="https://sarpublication.com/media/editors/Person_9j0XEAa.jpg">
+			<div class="text">
+				<h1>Lisa</h1>
+				<p><b>Hey, have to try Flexbox? This so much better than floats!</b></p>
+			</div>
+        </div>
+        
+		<div class="David">
+			<div class="text">
+				<h1>David</h1>
+				<p><b>Hey, I`ve never tried it.</b></p>				
+			</div>
+			<img class="I" src="https://sarpublication.com/media/editors/Person_9j0XEAa.jpg">
+        </div>
+        
+		<div class="Lisa">
+			<img class="I" src="https://sarpublication.com/media/editors/Person_9j0XEAa.jpg">
+			<div class="text">
+				<h1>Lisa</h1>
+				<p><b>It`s a real layout model, you can forget about clearfix and other hacks.</b></p>
+            </div>
+		</div>
+
+
+
+	</section>
+</body>
+</html>
