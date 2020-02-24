@@ -5,73 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
             body{
-                padding: 15px 0px;
                 text-align: center;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 color: white;
                 height: auto;
-                background: url(https://avatars.mds.yandex.net/get-pdb/245485/c90760dc-111e-4cb6-978c-e7d9a5db8606/s1200);
-                background-size: 215px;
+                background-color: lightgray;
+                margin: 0;
+                padding: 0;
+                width: 100%;
             }
+          
 
             .konteiner{
-				width:100%;
-				height:auto;
-				text-align: center;
-			}
+				        width:100%;
+				        height:auto;
+				        text-align: center;
+			      }
             
-			.sample-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-image: url(https://lh3.googleusercontent.com/proxy/xJWbxVx2w3WFLvxniFsE-Zk55BS9ig7l4RhvvT5s4PPsVX36QSUdOO4EudVpFlJSljYdOqLXesvsIyfO3SkJFB8Zr6Gj8DDAZE_IsnRA2t0dUx_0sOP-iMq4ohti_3bRlSuPB9-qgmczGNZZ1Q_uom7hucFSGrZtKKpVOahzXeVhXGY);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+            a{
+                text-decoration:none
+            }
+
+            .header{
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                flex-flow: wrap;
+                justify-content: center;
+                height:500px;
+                width: auto;
+            }
+
+            .header:after{
+              content:"";
+              width:100%;
+              height:100%;
+              position:absolute;
+              z-index:-1;
+              background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+            }
+.header:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+    transform: translateZ(0);
+  background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
 }
-.sample-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: MidnightBlue;
-  opacity: 0.3;
+.header a{
+  color:#eee
 }
-.sample-header-section {
-  position: relative;
-  padding: 15% 0 10%;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat", sans-serif;
+.menu{
+  display:block;
+  width:40px;
+  height:30px;
+  border:2px solid #fff;
+  border-radius:3px;
+  position:absolute;
+  right:20px;
+  top:20px;
+  text-decoration:none
 }
-h1 {
-  font-weight: 500;
+.menu:after{
+  content:"";
+  display:block;
+  width:20px;
+  height:3px;
+  background:#fff;
+  position:absolute;
+  margin:0 auto;
+  top:5px;
+  left:0;
+  right:0;
+  box-shadow:0 8px, 0 16px
 }
-h2 {
-  font-weight: 400;
+.logo{
+  border:2px solid #fff;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  align-content:center;
+  margin:20px;
+  padding:0px 10px;
+  font-weight:900;
+  font-size:1.1em;
+  line-height:1;
+  box-sizing:border-box;
+  height:40px
 }
-.sample-section-wrap {
-  position: relative;
-  background-color: white;
+.sides, .info{
+  flex: 0 0 auto;
+  width:50%
 }
-.sample-section {
-  position: relative;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
+.info{
+  width:100%;
+  padding:15% 10% 0 10%;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(0,0,0,0.2)
 }
 
-           .s{
-				width:100%;
-                height:  auto;;
-			}
+.content{  
+  padding:5% 10%;
+  text-align:justify
+}
+.btn{
+  color:#333;
+  border:2px solid;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px;
+  font-weight:600
+}
+
+
+        
              
 
             .m{
@@ -83,8 +141,7 @@ h2 {
             
             
             #cssmenu {
-            background: rgba(109, 133, 121, 0.897);
-            width: auto;
+            width: 100%;
             }
 
             #cssmenu ul {
@@ -142,13 +199,18 @@ h2 {
 
 			footer{
 				clear:both;
-				height: 25px;
+				height: 150px;
 				width: 100%;
 				text-align: center;
-				background-color:lightcoral;
+        background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) 50% 0 no-repeat;
+        background-position-y:bottom;
 			}
 
-            @media{
+            @media(max-width: 1000px){
+              body{
+                  margin: 0;
+                  padding: 0;
+              }
            .cont{
                flex-flow: column;
                width: 100%;
@@ -186,15 +248,8 @@ h2 {
 	<body>
         <div class="konteiner">
 
-            <div class="sample-header">
-                <div class="sample-header-section">
-                  <h1>Scroll down to see the parallax effect</h1>
-                  <h2>Background landcape scrolls with its own depth </h2>
-                </div>
-              </div>
-
-            <div class="m">
-                <div id='cssmenu'>
+          <div class="header">
+            <div id='cssmenu'>
                     <ul>
                        <li class='active'><a href='#'><span>Home</span></a></li>
                        <li><a href='#'><span>Products</span></a></li>
@@ -202,9 +257,30 @@ h2 {
                        <li class='last'><a href='#'><span>Contact</span></a></li>
                     </ul>
                     </div>
-                <div class="s" style="color: black;">In ur HEEAAD</div>
+            <div class="sides"> <a href="#" class="menu"> </a></div>
+            <div class="info">
+              <h1>HEADER</h1>
             </div>
-            <footer>Zombie! <span style="color: black;">Zombie! </span>Zombie-e-e </footer>
+          </div>
+         
+
+            <div class="m">
+                 <section class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
+            
+          </section>
+               
+            </div>
+            <footer>Zombie! <span style="color: black;">Zombie! </span>Zombie-e-e 
+            <br><br><br><br>
+            </footer>
         </div>
     </body>
 </html>
